@@ -23,5 +23,8 @@
     <ClInclude Include="Celeste_lib.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
