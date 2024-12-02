@@ -1,4 +1,5 @@
 #include <windows.h>
+#include "Celeste_lib.h"
 
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
@@ -92,6 +93,10 @@ int main()
 	while (sRunning)
 	{
 		PlatFormUpdateWindow();
+		SM_TRACE("TEST");
+		SM_WARN("TEST");
+		SM_ERROR("TEST");
+		ASSERT(false, "Assertion hit");
 	}
 
 	return 0;
