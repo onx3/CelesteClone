@@ -8,6 +8,15 @@
     <Filter Include="Dependencies">
       <UniqueIdentifier>{862fa763-be8d-4918-bdef-3a417dd5eff1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{f3426fc3-b784-42ff-bb77-b48fb4f13391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders">
+      <UniqueIdentifier>{6f944dc9-62ed-4c1e-b6e7-7d551a8d6f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{4d61f419-1c9b-4c99-bd08-0545ecc47cbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -16,14 +25,14 @@
     <ClCompile Include="Dependencies\GLAD\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Renderer\Shader.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Celeste\Celeste_lib.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Celeste\Memory.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Dependencies\GLAD\include\glad\glad.h">
       <Filter>Dependencies</Filter>
     </ClInclude>
@@ -36,5 +45,25 @@
     <ClInclude Include="Dependencies\GLAD\include\KHR\khrplatform.h">
       <Filter>Dependencies</Filter>
     </ClInclude>
+    <ClInclude Include="CelesteLib.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Shader.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\quad.frag">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="Assets\Shaders\quad.vert">
+      <Filter>Assets\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

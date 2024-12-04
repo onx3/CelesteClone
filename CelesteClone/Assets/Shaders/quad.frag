@@ -1,9 +1,8 @@
-#version 430 core
+#version 460 core
+out vec4 FragColor;
 
-layout (location = 0) out vec4 fragColor;
+in vec3 ourColor;
 
-void main()
-{
-  // White Quad
-  fragColor = vec4(1.0, 0.0, 0.0, 1.0);
+void main() {
+    FragColor = vec4(ourColor, 1.0);
 }
