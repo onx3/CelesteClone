@@ -4,6 +4,7 @@
 #include "Dependencies/GLFW/include/GLFW/glfw3.h"
 #include <iostream>
 
+// Support changing window size
 void framebuffer_size_callback(GLFWwindow * window, int width, int height)
 {
     glViewport(0, 0, width, height);
@@ -48,7 +49,7 @@ int main()
     while (!glfwWindowShouldClose(window))
     {
         // Clear screen
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.5f, 0.1f, 0.8f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         // Swap buffers and poll events
